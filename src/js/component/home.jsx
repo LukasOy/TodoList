@@ -1,26 +1,39 @@
-import React from "react";
+import React, {useState} from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+
 
 //create your first component
+
 const Home = () => {
+	const [tarea, nueva] = useState(["Tarea1","Tarea2","Tarea3",]);
+		
+	const borrar = (b) => {
+		nueva(tarea.filter((value,index,arr)=> {return index != b}));
+	}
+ 	
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
+		
+			<div className="text-center">
+
+				<h1 >Lista de Tareas </h1>
+
+				<form onSubmit={(event)=>{
+					event.preventDefault();
+					nueva([...tarea,event.target[0].value]);
+				}}>
+
+				<input placeholder="¿cual es tu tarea?"></input>
+				<button> Ingresar</button>
+				</form>
+				{tarea.map((value,index, arr)=>{
+					return <li key={index}>{value} 
+					<button onClick={() => borrar(index)}> X </button></li>
+
+				})}
+
+			</div>
 	);
+	
 };
 
 export default Home;
