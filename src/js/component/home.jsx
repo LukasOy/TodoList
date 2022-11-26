@@ -3,7 +3,7 @@ import React, {useState} from "react";
 
 
 //create your first component
-
+	
 const Home = () => {
 	const [tarea, nueva] = useState(["Tarea1","Tarea2","Tarea3",]);
 		
@@ -14,9 +14,12 @@ const Home = () => {
 	return (
 		
 			<div className="text-center">
-
+			<div id="Caja1"> CUADRO 1 </div>
+			<div id="Caja2"> CUADRO 2 </div>
+  			<div id="Caja3"> CUADRO 3 </div>
 				<h1 >Lista de Tareas </h1>
 
+				
 				<form onSubmit={(event)=>{
 					event.preventDefault();
 					nueva([...tarea,event.target[0].value]);
@@ -30,7 +33,7 @@ const Home = () => {
 					<button onClick={() => borrar(index)}> X </button></li>
 
 				})}
-
+				
 			</div>
 	);
 	
