@@ -1,48 +1,55 @@
 
-.text-center {
-    position: relative;
-    background-color: grey;
-    left: 350px; 
-    top: 10px;
-    z-index: 1;
-    margin: 200px;
-    width: 300px;
-    height: 100px;
-    padding: 50px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    z-index: 1;
-}
-#Caja1 {
-    background-color: grey;
-    border: 1px solid black;
+/*.text-center {
+    width:500px;
+    height:485px;
+    border-radius:8px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.5);
     position: absolute;
-    left: 10px; 
-    top: 25px; 
-    z-index: 2;
-    width: 300px;
-    padding: 50px;
-   
+    top:0px;
+    border:1px solid #726A53;
+    background-color:#F8F5ED;
+    margin: 10%;
+    padding: 10%;
+    z-index: 1;
 }
+*/
 #Caja2 {
-    background-color: grey;
-    border: 1px solid black;
-    position: absolute;
-    left: 30px; 
-    top: 80px; 
-    z-index: 3;
-    width: 300px;
-    padding: 50px;
+    width:500px;
+    height:475px;
+    border-radius:8px;
+  box-shadow: 0px 3px 5px rgba(0,0,0,.5);
+  position: absolute;
+  top:0px;
+  border:1px solid #726A53;
+  background-color:#F8F5ED;
+  margin: 10%;
+  padding: 10%;
+  z-index:2;
+  text-align: start;
 }
 #Caja3 {
-    background-color: grey;
-    border: 1px solid black;
-    position: absolute; 
-    left: 50px; 
-    top: 120px; 
-    z-index: 4;
-    width: 300px;
-    padding: 50px;
+  
+    width:500px;
+    height:465px;
+    border-radius:8px;
+  box-shadow: 0px 3px 5px rgba(0,0,0,.5);
+  position: absolute;
+  top:0px;
+  border:1px solid #726A53;
+  background-color:#F8F5ED;
+  margin: 10%;
+  padding: 10%;
+  font-size:15px;
+    z-index: 3;
+}
+#caja4 {
+position: absolute;
+bottom: 0px;
+left: 150px;
+margin: 0%;
+  padding: 0px;
+ 
+
 }
 /*
 <div style="position: absolute; left: 10px; top: 25px; z-index: 1;"> CUADRO 1 </div>
