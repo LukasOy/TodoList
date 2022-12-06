@@ -13,6 +13,7 @@
     z-index: 1;
 }
 */
+/*
 #Caja2 {
     width:500px;
     height:475px;
@@ -28,7 +29,7 @@
   text-align: start;
 }
 #Caja3 {
-  
+  align-items:center ;
     width:500px;
     height:465px;
     border-radius:8px;
