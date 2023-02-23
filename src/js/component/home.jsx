@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 const Caja1CSS = (
 {
- color: "white",
+ color: "red",
  backgroundColor: "black",
  justifyContent: "center",
  marginLeft: "100px",
@@ -13,7 +13,7 @@ const Caja2CSS =(
 	{
 		paddingTop: "10px",
 		alignItems: "flex-start",
-		backgroundImage: 'url("https://thumbs.dreamstime.com/z/vista-de-cerca-dos-hojas-papel-sobre-las-otras-aisladas-fondo-blanco-en-185331748.jpg")',
+		
 	}
 ) ;
 
